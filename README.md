@@ -1,119 +1,158 @@
-# 🏗️ SQL Data Warehouse Project (Medallion Architecture)
+# 🏢 Data Warehouse & Analytics Portfolio Project
 
-This project demonstrates the complete implementation of a **modern SQL-based Data Warehouse** using the **Medallion Architecture (Bronze, Silver, Gold layers)**. It covers raw data ingestion, data cleaning, transformation, and building business-ready analytical models.
+Welcome to my **SQL Data Warehouse & Analytics Project**! 🚀  
+This project showcases a complete **end-to-end data engineering workflow**, starting from raw data ingestion to business-ready analytics.
 
-The goal of this project is to showcase strong practical skills in **SQL, Data Modeling, ETL Pipelines, and Analytics**.
-
----
-
-## 🎯 Project Objectives
-
-- Build a complete **end-to-end data warehouse**
-- Apply **Bronze, Silver, and Gold** layered architecture
-- Clean and standardize raw data
-- Create **dimension and fact tables**
-- Enable **business-ready reporting and analytics**
-- Follow proper **naming conventions and documentation**
+It is specially designed as a **portfolio project** to demonstrate real-world practices in:
+- Data Engineering  
+- ETL Development  
+- Data Modeling  
+- SQL Analytics  
 
 ---
 
-## 🧱 Architecture Overview
+## 🖼️ High-Level Architecture
 
-### 🔹 Bronze Layer (Raw Data)
-- Stores raw ingested CSV data  
+![Data Warehouse Architecture](C:\Users\Private\Downloads\data_architecture.png)
+
+This architecture follows the **Medallion Design Pattern** with three main layers:
+- Bronze (Raw Data)
+- Silver (Cleaned & Standardized Data)
+- Gold (Business-Ready Data)
+
+---
+
+## 🏗️ Data Architecture Overview
+
+### 🟤 Bronze Layer – Raw Zone
+- Stores raw data exactly as received  
+- Data is loaded from **CSV files**
 - No transformations applied  
-- Acts as the **single source of truth**
+- Used for audit & backup purposes  
 
-### 🔸 Silver Layer (Cleaned Data)
+### ⚪ Silver Layer – Clean Zone
 - Data cleaning & validation  
-- Null handling, data type fixes  
-- Duplicate and error removal  
+- Data type corrections  
+- Duplicate handling  
+- Standardization & normalization  
 
-### ⭐ Gold Layer (Business Models)
-- Final analytical tables  
-- Fact & dimension tables  
-- Ready for dashboards & reporting  
-
----
-
-## 📂 Project Folder Structure
-
-sql-data-warehouse-project/
-│
-├── datasets/ # Raw CSV files
-├── scripts/
-│ ├── bronze/ # Raw data ingestion
-│ ├── silver/ # Data cleaning & transformation
-│ └── gold/ # Final analytics models
-├── docs/ # Architecture diagrams & data catalog
-├── tests/ # Data quality checks
-└── README.md
-
+### 🟡 Gold Layer – Business Layer
+- Final reporting-ready data  
+- Fact & Dimension tables  
+- Star schema modeling  
+- Used directly for analytics & BI  
 
 ---
 
-## 🛠️ Tools & Technologies
+## 📖 Project Summary
 
+This project covers the following key areas:
+
+- Modern Data Warehouse Design using Medallion Architecture  
+- Complete ETL pipelines using SQL  
+- Dimensional Data Modeling (Fact & Dimensions)  
+- Business-level Analytics using SQL Queries  
+- Fully documented structure for learning & reuse  
+
+---
+
+## 🎯 Skills Demonstrated
+
+This repository highlights strong hands-on experience in:
+
+- SQL Development  
+- Data Warehousing  
+- ETL Pipeline Development  
+- Data Cleaning & Transformation  
+- Star Schema Modeling  
+- Business Analytics  
+
+---
+
+## 🛠️ Tools & Technologies Used
+
+- SQL Server  
 - SQL (T-SQL)  
-- Microsoft SQL Server  
 - CSV Data Sources  
 - Draw.io (for diagrams)  
 - Git & GitHub  
 
 ---
 
-## 🚀 How To Run This Project
+## 🚀 Project Objectives
 
-1. Create a database in SQL Server  
-2. Upload the CSV files from the `datasets` folder  
-3. Execute scripts in the following order:
-   - `scripts/bronze`
-   - `scripts/silver`
-   - `scripts/gold`
-4. Verify final tables in the **Gold Layer**
+- Build a centralized data warehouse for sales analytics  
+- Integrate data from **CRM & ERP systems**  
+- Ensure high data quality  
+- Enable analytical reporting  
+- Support business decision-making using SQL  
 
 ---
 
-## 📊 Data Modeling
+## 📊 Analytics Scope
 
-- **Dimension Tables:** Customers, Products, Dates  
-- **Fact Table:** Sales  
+The Gold Layer supports analysis on:
 
-### Supported KPIs:
-- Total Sales  
-- Quantity Sold  
-- Revenue by Customer  
+- Customer Behavior  
 - Product Performance  
+- Sales Trends  
+- Revenue Insights  
+
+These insights help stakeholders take **data-driven decisions**.
+
+---
+## 📂 Repository Structure
+
+data-warehouse-project/
+│
+├── datasets/ # Raw ERP & CRM CSV files
+├── docs/ # Architecture, models & documentation
+│ ├── data_architecture.drawio
+│ ├── data_flow.drawio
+│ ├── data_models.drawio
+│ ├── data_catalog.md
+│ └── naming-conventions.md
+│
+├── scripts/
+│ ├── bronze/ # Raw data load scripts
+│ ├── silver/ # Data cleaning & transformation scripts
+│ └── gold/ # Analytical model scripts
+│
+├── tests/ # Data quality & validation checks
+├── README.md
+├── LICENSE
+└── .gitignore
 
 ---
 
-## ✅ Data Quality Features
+## ✅ Project Requirements Covered
 
-- Null value handling  
-- Data type validation  
-- Duplicate record checks  
-- Business rule validations  
+### 🔧 Data Engineering
+- Source Integration (ERP & CRM)
+- Data Cleansing & Validation
+- Data Modeling
+- ETL Automation
+- Proper Documentation
 
----
-
-## 📌 Key Learnings from This Project
-
-- Real-world Data Warehousing workflow  
-- Hands-on experience with ETL pipelines  
-- Strong understanding of dimensional modeling  
-- SQL performance optimization  
-- Professional documentation practices  
+### 📈 Data Analytics
+- SQL-based reporting
+- KPI generation
+- Business insights
 
 ---
 
 ## 👩‍💻 Author
 
-**Your Name Here**  
-Data Engineering Intern | SQL Developer  
-Pakistan 🇵🇰  
+**Aleena Zafar**  
+Data Engineering Intern | SQL Developer    
 
 ---
 
-## 📜 License
+## 🛡️ License
 
-This project is licensed for learning and portfolio use.
+This project is created for learning and portfolio demonstration purposes.
+
+---
+
+
+
